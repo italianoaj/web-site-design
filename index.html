@@ -13,7 +13,6 @@
 			function init(){
 				cr=document.getElementById("chat-room");
 				mess=document.getElementById("message");
-				console.log(window.screen.width);
 				mess.style.width=window.screen.width-30+"px";
                 welcome();
 			}
@@ -66,7 +65,7 @@
 				}else{
 					suffix="pm";
 				}
-				cr.innerHTML+="<div class='container darker'><p>Administrator-Bot</p><img id='admin' src='img/adminbot.jpg' alt='avatar' style='float: left; max-width: 60px; width: 100%; margin-right: 20px; border-radius: 50%;'><p>You can type a message to the group in the space provided below. You can then send the message by clicking the send button. Beep-Boop-Beep *insert other helpful information here.</p><span class='time-left'>"+time.getHours()+":"+prefix+time.getMinutes()+""+suffix+"</span></div>";
+				cr.innerHTML+="<div class='container darker'><p>Administrator-Bot</p><img id='admin' src='img/adminbot.jpg' alt='avatar' style='float: left; max-width: 60px; width: 100%; margin-right: 20px; border-radius: 50%;'><p>You can type a message to the group in the space provided below. You can then send the message by clicking the send button. Beep-Boop-Beep *insert other helpful information here*.</p><span class='time-left'>"+time.getHours()+":"+prefix+time.getMinutes()+""+suffix+"</span></div>";
             }
                 
 
